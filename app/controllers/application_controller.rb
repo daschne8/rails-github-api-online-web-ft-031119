@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
     base_url = "https://github.com/login/oauth/authorize"
     github_url = "https://github.com/login/oauth/authorize"
 
-    redirect_to github_url
+    redirect_to github_url unless logged_in?
   end
 
   def logged_in?
