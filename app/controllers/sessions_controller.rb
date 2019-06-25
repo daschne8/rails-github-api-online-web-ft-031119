@@ -8,6 +8,6 @@ class SessionsController < ApplicationController
     end
     body = JSON.parse(response.body)
   end
-  
+
 
 end
