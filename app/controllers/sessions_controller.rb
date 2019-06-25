@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
     end
     body = JSON.parse(response.body)
     session[:token] = body['access_token']
-
+    binding.pry
+    puts "done"
 
 
     redirect_to '/'
